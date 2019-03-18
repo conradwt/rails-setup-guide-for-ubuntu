@@ -276,4 +276,4 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 
 ## Copyright
 
-&copy; Copyright 2018 Conrad Taylor. All Rights Reserved.
+&copy; Copyright 2018 - 2019 Conrad Taylor. All Rights Reserved.
