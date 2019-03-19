@@ -243,18 +243,32 @@ The purpose of this step by step tutorial is to provide a very simple example of
       email = john.doe@example.com
       ```
 
-19. In Ubuntu, copy SSH keys to the following location:
+19. In Ubuntu, create and/or setup SSH keys
 
-    ```bash
-    cp -r /path/to/.ssh $HOME/.ssh
-    ```
+    - have existing ssh keys
 
-20. In Ubuntu, update the SSH files' permissions
+      - create SSH folder in home directory
 
-    ```bash
-    chmod 700 $HOME/.ssh
-    chmod 600 $HOME/id_rsa
-    chmod 644 $HOME/id_rsa.pub
+          ```bash
+           mkdir -p $HOME/.ssh
+          ```
+          
+      - copy your SSH keys to the above folder
+      
+      - set permissions
+    
+        ```bash
+        chmod 700 $HOME/.ssh
+        chmod 600 $HOME/id_rsa
+        chmod 644 $HOME/id_rsa.pub
+        ```
+    - doesn't have existing ssh keys
+    
+      - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+      
+        Note: Please select Linux link at the top of the page.
+      
+      - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
     ```
 
 ## Support
