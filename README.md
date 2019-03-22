@@ -162,6 +162,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
     source $HOME/.bashrc
     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    source $HOME/.bashrc
     ```
 
 11. In Ubuntu, install all of the approved plugins RBenv plugins
