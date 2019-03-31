@@ -1,14 +1,6 @@
 
-# Created by https://www.gitignore.io/api/node,ruby,rails,xcode,macos,cocoapods,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=node,ruby,rails,xcode,macos,cocoapods,visualstudiocode
-
-### CocoaPods ###
-## CocoaPods GitIgnore Template
-
-# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
-#           - Also handy if you have a large number of dependant pods
-#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
-Pods/
+# Created by https://www.gitignore.io/api/node,ruby,rails,xcode,macos,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=node,ruby,rails,xcode,macos,visualstudiocode
 
 ### macOS ###
 # General
@@ -278,4 +270,4 @@ DerivedData/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/node,ruby,rails,xcode,macos,cocoapods,visualstudiocode
+# End of https://www.gitignore.io/api/node,ruby,rails,xcode,macos,visualstudiocode
