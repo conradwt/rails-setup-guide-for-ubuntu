@@ -158,6 +158,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    sudo chmod go-w $HOME/.rbenv
     cd ~/.rbenv && src/configure && make -C src
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
     source $HOME/.bashrc
