@@ -184,7 +184,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 13. In Ubuntu, install Bundler and Rails
 
     ```bash
-    gem install bundler
+    gem install bundler -v=1.17.3
     gem install rails
     gem install rubocop
     rbenv rehash
