@@ -67,64 +67,14 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo service postgresql start
     ```
 
-4.  In Ubuntu, set the default PostgreSQL password
-
-    - login into the `postgres` account
-
-      ```bash
-      sudo su - postgres
-      ```
-
-    - start the `psql` client application
-
-      ```bash
-      psql
-      ```
-
-      If everything went successful, one should see something similar to the following:
-
-      ```text
-      postgres@6d0d30345e56:~$ psql
-      psql (10.5 (Ubuntu 10.5-1.pgdg16.04+1))
-      Type "help" for help.
-
-      postgres=#
-      ```
-
-    - change the PostgreSQL password by typing the following into the prompt and hitting the enter key:
-
-      ```text
-      \password
-      ```
-
-    - enter `password` for `Enter new password:` prompt.
-
-    - enter `password` for `Enter it again:` prompt.
-
-    - exit `psql` prompt by typing the following into the prompt and hitting the
-      enter key:
-
-      ```text
-      \q
-      ```
-
-    - exit `postgres` account by typing the following:
-
-      ```bash
-      exit
-      ```
-
-    Note: The password that you'll be using within your `database.yml` file
-    will be `password`.
-
-5.  In Ubuntu, download and install Node
+4.  In Ubuntu, download and install Node
 
     ```bash
     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
     sudo apt-get update -y && sudo apt-get install -y nodejs
     ```
 
-6.  Install Visual Studio Code Insiders
+5.  Install Visual Studio Code Insiders
 
     ```bash
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -135,26 +85,26 @@ The purpose of this step by step tutorial is to provide a very simple example of
     sudo apt-get install code-insiders
     ```
 
-7.  Create an alias for Visual Studio Code - Insiders
+6.  Create an alias for Visual Studio Code - Insiders
 
     ```bash
     echo 'alias c="code-insiders"' >> ~/.bashrc
     ```
 
-8.  In Ubuntu, clone this repository
+7.  In Ubuntu, clone this repository
 
     ```bash
     cd $HOME
     git clone https://github.com/conradwt/rails-setup-guide-for-ubuntu
     ```
 
-9.  In Ubuntu, change directory to the cloned repository
+8.  In Ubuntu, change directory to the cloned repository
 
     ```bash
     cd rails-setup-guide-for-ubuntu
     ```
 
-10. In Ubuntu, install and configure RBenv
+9.  In Ubuntu, install and configure RBenv
 
     ```bash
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -166,7 +116,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     source $HOME/.bashrc
     ```
 
-11. In Ubuntu, install all of the approved plugins RBenv plugins
+10. In Ubuntu, install all of the approved plugins RBenv plugins
 
     ```bash
     cd $HOME/rails-setup-guide-for-ubuntu
@@ -174,14 +124,14 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ./install-rbenv-plugins.bash
     ```
 
-12. In Ubuntu, install Ruby
+11. In Ubuntu, install Ruby
 
     ```bash
     rbenv install 2.6.2
     rbenv global 2.6.2
     ```
 
-13. In Ubuntu, install Bundler and Rails
+12. In Ubuntu, install Bundler and Rails
 
     ```bash
     gem install bundler -v=1.17.3
@@ -190,33 +140,33 @@ The purpose of this step by step tutorial is to provide a very simple example of
     rbenv rehash
     ```
 
-14. In Ubuntu, set the Git completion
+13. In Ubuntu, set the Git completion
 
     ```bash
     cp $HOME/rails-setup-guide-for-ubuntu/sample.git-completion.sh $HOME/.git-completion.sh
     echo 'source $HOME/.git-completion.sh' >> $HOME/.bashrc
     ```
 
-15. In Ubuntu, install Heroku Toolbelt
+14. In Ubuntu, install Heroku Toolbelt
 
     ```bash
     curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     ```
 
-16. In Ubuntu, create a Github.com account
+15. In Ubuntu, create a Github.com account
 
     ```
     Note:  Skip this step if you already have an account.
     ```
 
-17. In Ubuntu, create Git configuration and global files
+16. In Ubuntu, create Git configuration and global files
 
     ```
     cp $HOME/rails-setup-guide-for-ubuntu/sample.gitconfig ~/.gitconfig
     cp $HOME/rails-setup-guide-for-ubuntu/sample.gitignore_global ~/.gitignore_global
     ```
 
-18. In Ubuntu, edit .gitconfig file
+17. In Ubuntu, edit .gitconfig file
 
     - change `excludesfile` setting:
 
@@ -233,14 +183,14 @@ The purpose of this step by step tutorial is to provide a very simple example of
       git config --global user.email johndoe@example.com
       ```
 
-19. create and/or setup SSH keys
+18. In Ubuntu, create and/or setup SSH keys
 
-    - if you have SSH keys
+    - have existing ssh keys
 
       - create SSH folder in home directory
 
         ```bash
-         mkdir -p $HOME/.ssh
+        mkdir -p $HOME/.ssh
         ```
 
       - copy your SSH keys to the above folder
@@ -253,44 +203,16 @@ The purpose of this step by step tutorial is to provide a very simple example of
         chmod 644 $HOME/id_rsa.pub
         ```
 
-    - if you don't have SSH keys
+    - doesn't have existing ssh keys
 
       - [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-        Note: Please select Mac link at the top of the page.
+        Note: Please select Linux link at the top of the page.
 
-20. Add SSH public key to Github
+19. Add SSH public key to Github
 
     [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
-21. in Terminal.app, set the terminal
-
-    ```bash
-    cp sample.terminal $HOME/.
-    ```
-
-22. in the Terminal.app, testing your SSH connection
+20. In Ubuntu, testing your SSH connection
 
     [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
-
-## Support
-
-Bug reports and feature requests can be filed here:
-
-- [File Bug Reports and Features](https://github.com/conradwt/rails-setup-guide-for-ubuntu/issues)
-
-## Contact
-
-Follow Conrad Taylor on Twitter ([@conradwt](https://twitter.com/conradwt))
-
-## Creator
-
-- [Conrad Taylor](http://github.com/conradwt) ([@conradwt](https://twitter.com/conradwt))
-
-## License
-
-This repository is released under the [MIT License](http://www.opensource.org/licenses/MIT).
-
-## Copyright
-
-&copy; Copyright 2018 - 2019 Conrad Taylor. All Rights Reserved.
