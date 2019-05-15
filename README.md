@@ -127,8 +127,8 @@ The purpose of this step by step tutorial is to provide a very simple example of
 11. In Ubuntu, install Ruby
 
     ```bash
-    rbenv install 2.6.2
-    rbenv global 2.6.2
+    rbenv install 2.6.3
+    rbenv global 2.6.3
     ```
 
 12. In Ubuntu, install Bundler and Rails
